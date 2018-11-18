@@ -16,7 +16,7 @@ spec:
       containers:
       - image: node:9.2.1
         command: ['/bin/sh', '-c']
-        args: ['cd /home && git clone https://github.com/iuriifavi/current_com.git && cd current_com && npm install && sails lift']
+        args: ['cd /home && git clone https://github.com/iuriifavi/current_com.git && cd current_com && npm i -g sails && npm install && sails lift']
         name: web
         ports:
         - containerPort: 1337
