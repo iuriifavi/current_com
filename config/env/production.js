@@ -44,7 +44,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     default: {
-      adapter: 'sails-mongo'
+      adapter: "sails-mongo"
     }
   },
 
@@ -178,7 +178,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cookie: {
-      // secure: true,
+      secure: false,
       maxAge: 24 * 60 * 60 * 1000 // 24 hours
     }
   },
@@ -203,10 +203,9 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+
+    onlyAllowOrigins: ["http://localhost", "http://35.245.85.47"]
+
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
